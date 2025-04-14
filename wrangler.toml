@@ -1,0 +1,19 @@
+name = "story-draw-app"
+compatibility_date = "2025-04-14"
+
+[build]
+command = "npm run build"
+
+[site]
+bucket = ".next/static"
+
+[env.production]
+name = "story-draw-app-prod"
+
+[env.staging]
+name = "story-draw-app-staging"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "story_draw_db"
+database_id = "story-draw-db"
